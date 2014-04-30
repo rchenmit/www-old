@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+        <meta charset="utf-8">
+        <title>ChenLab</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Custom styles for this template -->
+        <link href="theme.css" rel="stylesheet">
+        <style>
+            /* CUSTOMIZE THE NAVBAR
+            -------------------------------------------------- */
+
+            /* Special class on .container surrounding .navbar, used for positioning it into place. */
+            .navbar-wrapper {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              z-index: 10;
+              margin-top: 20px;
+              margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+            }
+            .navbar-wrapper .navbar {
+
+            }
+
+            /* Remove border and change up box shadow for more contrast */
+            .navbar .navbar-inner {
+              border: 0;
+              -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+                 -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+                      box-shadow: 0 2px 10px rgba(0,0,0,.25);
+            }
+
+            /* Downsize the brand/project name a bit */
+            .navbar .brand {
+              padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+              font-size: 16px;
+              font-weight: bold;
+              text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+            }
+
+            /* Navbar links: increase padding for taller navbar */
+            .navbar .nav > li > a {
+              padding: 15px 20px;
+            }
+
+            /* Offset the responsive button for proper vertical alignment */
+            .navbar .btn-navbar {
+              margin-top: 10px;
+            }
+
+
+
+            /* CUSTOMIZE THE CAROUSEL
+            -------------------------------------------------- */
+
+            /* Carousel base class */
+            .carousel {
+              margin-bottom: 10px;
+            }
+
+            .carousel .container {
+              position: relative;
+              z-index: 9;
+            }
+
+            .carousel-control {
+              height: 80px;
+              margin-top: 0;
+              font-size: 120px;
+              text-shadow: 0 1px 1px rgba(0,0,0,.4);
+              background-color: transparent;
+              border: 0;
+              z-index: 10;
+            }
+
+            .carousel .item {
+              height: 300px;
+            }
+            .carousel img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              min-width: 100%;
+              height: 300px;
+            }
+
+            .carousel-caption {
+              background-color: transparent;
+              position: static;
+              max-width: 550px;
+              padding: 0 20px;
+              margin-top: 100px;
+            }
+            .carousel-caption h1,
+            .carousel-caption .lead {
+              margin: 0;
+              line-height: 1.25;
+              color: #fff;
+              text-shadow: 0 1px 1px rgba(0,0,0,.4);
+            }
+            .carousel-caption .btn {
+              margin-top: 10px;
+            }
+            /* RESPONSIVE CSS
+            -------------------------------------------------- */
+
+            @media (max-width: 979px) {
+
+              .container.navbar-wrapper {
+                margin-bottom: 0;
+                width: auto;
+              }
+              .navbar-inner {
+                border-radius: 0;
+                margin: -20px 0;
+              }
+
+              .carousel .item {
+                height: 500px;
+              }
+              .carousel img {
+                width: auto;
+                height: 500px;
+              }
+
+              .featurette {
+                height: auto;
+                padding: 0;
+              }
+              .featurette-image.pull-left,
+              .featurette-image.pull-right {
+                display: block;
+                float: none;
+                max-width: 40%;
+                margin: 0 auto 20px;
+              }
+            }
+
+
+            @media (max-width: 767px) {
+
+              .navbar-inner {
+                margin: -20px;
+              }
+
+              .carousel {
+                margin-left: -20px;
+                margin-right: -20px;
+              }
+              .carousel .container {
+
+              }
+              .carousel .item {
+                height: 500px;
+              }
+              .carousel img {
+                height: 500px;
+              }
+              .carousel-caption {
+                width: 65%;
+                padding: 0 70px;
+                margin-top: 100px;
+              }
+              .carousel-caption h1 {
+                font-size: 30px;
+              }
+              .carousel-caption .lead,
+              .carousel-caption .btn {
+                font-size: 18px;
+              }
+
+              .marketing .span4 + .span4 {
+                margin-top: 40px;
+              }
+
+              .featurette-heading {
+                font-size: 30px;
+              }
+              .featurette .lead {
+                font-size: 18px;
+                line-height: 1.5;
+              }
+
+            }
+        </style>
+    </head>
+    <body role="document">
+
+        <!-- Fixed navbar -->
+        <div class="navbar-wrapper">
+            <div class="container">
+                <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                    <!--<div class="container"> -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">Robert Chen</a>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li class="dropdown active">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li class="dropdown-header">Nav header</li>
+                                        <li><a href="#">Separated link</a></li>
+                                        <li><a href="#">One more separated link</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="publications.html">Publications</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div><!--/.nav-collapse -->
+                    <!--</div> -->
+                </div>
+            </div> <!-- /.container-->
+        </div> <!-- /.navbar-wrapper -->
+
+        <!-- Carousel
+        ================================================== -->
+        <div id="myCarousel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/slider/synapse.jpg" alt="">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Neuroscience.</h1>
+                  <p class="lead">Artificial intelligence has vast potential to disrupt various areas of medicine including Neuroscience.</p>
+                  <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/slider/synapse.jpg" alt="">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Radiology.</h1>
+                  <p class="lead">Artificial intelligence has vast potential to disrupt radiology and other diagnostic systems.</p>
+                  <a class="btn btn-large btn-primary" href="#">Learn more</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/slider/synapse.jpg" alt="">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Artificial Intelligence</h1>
+                  <p class="lead">Artificial intelligence has vast potential to disrupt radiology.</p>
+                  <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        </div><!-- /.carousel -->
+
+
+
+
+
+
+
+        <div class="container theme-showcase" role="main">
+            <!-- Intro section -->
+            <hr>
+            <h3>Intro</h3>
+                PhD student in Computer Science/Bioengineering with concentration in <strong>Machine Learning + Big Data Analytics</strong>. <br>
+                <a href="http://web.mit.edu">MIT</a> <a href="http://math.mit.edu/index.php">Math</a> Alum. <br>
+                MD-PhD fellow with interests in quantified self, personalized medicine, radiology, neurosurgery/neurology/psychiatry, cardiology.
+            
+            <hr>
+            <h3>Vitals</h3>
+                Mail: robchen99999 AT alum DOT mit DOT edu, minus the numbers<br>
+                Coordinates: Georgia Institute of Technology, Emory Healthcare <br>
+                <a href="http://twitter.com/rchenmit">@rchenmit</a> | 
+                <a href="http://github.com/rchenmit">Github</a> |
+                <a href="http://www.quora.com/Robert-Chen-9">Quora</a> <br>
+                Publications: <a href="http://scholar.google.com/citations?user=PFxbd48AAAAJ&hl=en">Google Scholar</a> <br>
+                Erdos Number: <strong>4</strong>
+            <hr>
+            <h3>Academic Interests (past and present)</h3>
+                <p><strong><em>Fundamental Engineering/Math: Machine learning, artificial intelligence, random processes</em> </strong>
+                    <li><small>Deep learning, Supervised learning, unsupervised learning, time series analysis, pattern analysis and association rule mining. </li>
+                    <li>Other: Probability, randomness, mathematical modeling, stochastic processes.</small> </li>
+                </p>
+                <p><strong><em>Applications</em></strong> 
+                    <li><small>Poker. Blackjack. Fitness. Computer aided medical diagnosis.  Radiology. Medical Image Processing. Genomics. Surgery. Alzheimers. Wearable sensors. Wearable computing. Cardiovascular health.  Next generation sequencing. Spam filtering.  Disaster management. Quantitative finance. Online shopping. </small></li>
+                </p>
+            <hr>
+            <h3>Pedigree</h3>
+                <p>
+                    BS Mathematics, Massachusetts Institute of Technology, earned 2011.
+                    <br>
+                    MD, Emory University, started 2011.
+                    <br>
+                    PhD, Georgia Institute of Technology, started 2012.
+                </p>
+          
+
+            <hr>
+            <div class="footer">
+            <p>&copy; R Chen 2013</p>
+            </div>
+
+
+ 
+        </div> <!-- /container -->
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $('.carousel').carousel()
+        </script>
+        <!-- <script src="../../assets/js/docs.min.js"></script> -->
+    </body>
+</html>
